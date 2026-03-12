@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#10b981" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter">
+  <!-- Outer Square -->
+  <rect x="25" y="25" width="50" height="50" />
+  <!-- Inner Square -->
+  <rect x="40" y="40" width="20" height="20" />
+  
+  <!-- Top Pins -->
+  <line x1="33" y1="25" x2="33" y2="10" />
+  <line x1="50" y1="25" x2="50" y2="10" />
+  <line x1="67" y1="25" x2="67" y2="10" />
+  
+  <!-- Bottom Pins -->
+  <line x1="33" y1="75" x2="33" y2="90" />
+  <line x1="50" y1="75" x2="50" y2="90" />
+  <line x1="67" y1="75" x2="67" y2="90" />
+  
+  <!-- Left Pins -->
+  <line x1="25" y1="33" x2="10" y2="33" />
+  <line x1="25" y1="50" x2="10" y2="50" />
+  <line x1="25" y1="67" x2="10" y2="67" />
+  
+  <!-- Right Pins -->
+  <line x1="75" y1="33" x2="90" y2="33" />
+  <line x1="75" y1="50" x2="90" y2="50" />
+  <line x1="75" y1="67" x2="90" y2="67" />
+</svg>
