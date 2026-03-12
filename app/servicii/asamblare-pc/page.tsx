@@ -10,13 +10,13 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/image1.jpg",
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/image2.jpg",
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/image3.jpg",
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/image4.jpg",
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/image5.jpg",
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/image6.jpg",
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/image7.jpg"
+  "https://drive.google.com/uc?export=view&id=1Fx9SkU5bLGbgiyex8EnBMK0FdYgM_VbA",
+  "https://drive.google.com/uc?export=view&id=1tzLE4bJcxhI89M8btxLm8Uh2rkvr_aGZ",
+  "https://drive.google.com/uc?export=view&id=1X8vLL_lIOk0O362pjeuipPeAoc0D_Na3",
+  "https://drive.google.com/uc?export=view&id=1v0KFpdn7P_OrvLTdLdfUou9GlhVOnY17",
+  "https://drive.google.com/uc?export=view&id=1ZEXt2G01CkG8j-ogUiND_sUuI6biXN_4",
+  "https://drive.google.com/uc?export=view&id=17iprrzJpqM7gZ71uQ129ervA1UPQaSir",
+  "https://drive.google.com/uc?export=view&id=18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo"
 ];
 
 export default function AsamblarePC() {

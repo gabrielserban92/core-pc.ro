@@ -9,12 +9,12 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/mentenanta-consola.jpg",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-consola0.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-consola1.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-consola2.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-consola3.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-consola4.jpg?raw=true"
+  "https://drive.google.com/uc?export=view&id=1YsEtxVEuR3ntCEd35LRrPo0r0UQGb5h2",
+  "https://drive.google.com/uc?export=view&id=1E7TShkrVI2zYnnHxoWkRp1i0IUoLeGmd",
+  "https://drive.google.com/uc?export=view&id=1-subTa2AhKdXl_N57X8czv1J_qS1E0ar",
+  "https://drive.google.com/uc?export=view&id=1rBKIir_m0NsKJTzTVMB2VP_oBfLijfyN",
+  "https://drive.google.com/uc?export=view&id=1bXIR_6QUJmAd_crOqAYKY4ojCixIHO1I",
+  "https://drive.google.com/uc?export=view&id=1EhVa4aueY08T2xHGWG-R6HaA9oEW3zO2"
 ];
 
 export default function MentenantaConsole() {

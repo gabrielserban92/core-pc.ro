@@ -9,12 +9,13 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/mentenanta-pc.jpg",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/maintenance-pc1.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/maintenance-pc2.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/video-card-b4&after.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/cooler2-b4&after.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/cooler-b4&after.jpg?raw=true"
+  "https://drive.google.com/uc?export=view&id=1-86lYiLNCHDZEd6461Ow4aJzMGP7cwxS",
+  "https://drive.google.com/uc?export=view&id=1PW4RADOfcKq-uXak3sabJs62yoqNe89O",
+  "https://drive.google.com/uc?export=view&id=17VOkHmkreJPIswShF5kXOdSvQvlX1tHR",
+  "https://drive.google.com/uc?export=view&id=1ltejETAMOo1yAfBawFiwv_f9MdiBDzsE",
+  "https://drive.google.com/uc?export=view&id=1B5cDKN5Klhcg2vLviIhcn6lEdaGiqkJL",
+  "https://drive.google.com/uc?export=view&id=1hDpQ0Tf3YpV6VoujsZF0egKC666kIV9Q",
+  "https://drive.google.com/uc?export=view&id=1-ZJPH7jCtc-gqBJbHCHqKPd5K5TjLVf4"
 ];
 
 export default function MentenantaPC() {

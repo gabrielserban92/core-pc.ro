@@ -9,11 +9,11 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/inlocuire-componente.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/inlocuire-cooler.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/inlocuire-placa-video.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/inlocuire-rami.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/m2-ssd.jpg?raw=true"
+  "https://drive.google.com/uc?export=view&id=1IrwxE-nflFkE-lkPxY5mCEseF9W2GfCm",
+  "https://drive.google.com/uc?export=view&id=1XTDpH1TFJ13vTAafVm5eQ-cwQIFJ4O3c",
+  "https://drive.google.com/uc?export=view&id=1siGnLsnTjR6hh4tNSv53F30UUd1Y5D9W",
+  "https://drive.google.com/uc?export=view&id=11n9cH4nH13qncJB8ZW91NOOjGXY-LBav",
+  "https://drive.google.com/uc?export=view&id=1hMGzabrw2AnkrE4JA-KpvbQ6mA_Eer66"
 ];
 
 const serviceOptions = [

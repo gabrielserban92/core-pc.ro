@@ -67,7 +67,7 @@ const hardwareServices = [
     price: 'de la 499,99 lei',
     color: 'text-emerald-400',
     bg: 'bg-emerald-400/10',
-    image: 'https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/image1.jpg'
+    image: 'https://drive.google.com/uc?export=view&id=1Fx9SkU5bLGbgiyex8EnBMK0FdYgM_VbA'
   },
   {
     id: 'mentenanta-pc',
@@ -77,7 +77,7 @@ const hardwareServices = [
     price: 'de la 399,99 RON',
     color: 'text-cyan-400',
     bg: 'bg-cyan-400/10',
-    image: 'https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/mentenanta-pc.jpg'
+    image: 'https://drive.google.com/uc?export=view&id=1-86lYiLNCHDZEd6461Ow4aJzMGP7cwxS'
   },
   {
     id: 'mentenanta-laptop',
@@ -87,7 +87,7 @@ const hardwareServices = [
     price: 'de la 299,99 RON',
     color: 'text-indigo-400',
     bg: 'bg-indigo-400/10',
-    image: 'https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/mentenanta-laptop.jpg'
+    image: 'https://drive.google.com/uc?export=view&id=1AUOpVX008PrXqykIXj5XF87YkEkbnU5l'
   },
   {
     id: 'mentenanta-console',
@@ -97,7 +97,7 @@ const hardwareServices = [
     price: 'de la 249,99 RON',
     color: 'text-purple-400',
     bg: 'bg-purple-400/10',
-    image: 'https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/mentenanta-consola.jpg'
+    image: 'https://drive.google.com/uc?export=view&id=1YsEtxVEuR3ntCEd35LRrPo0r0UQGb5h2'
   },
   {
     id: 'inlocuire-componente',
@@ -107,7 +107,7 @@ const hardwareServices = [
     price: 'de la 49,99 RON',
     color: 'text-orange-400',
     bg: 'bg-orange-400/10',
-    image: 'https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/inlocuire-componente.jpg'
+    image: 'https://drive.google.com/uc?export=view&id=1IrwxE-nflFkE-lkPxY5mCEseF9W2GfCm'
   }
 ];
 

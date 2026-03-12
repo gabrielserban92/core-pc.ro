@@ -9,12 +9,12 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/mentenanta-laptop.jpg",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-laptop1.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-laptop2.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-laptop3.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-laptop4.1.jpg?raw=true",
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/mentenanta-laptop4.2.jpg?raw=true"
+  "https://drive.google.com/uc?export=view&id=1AUOpVX008PrXqykIXj5XF87YkEkbnU5l",
+  "https://drive.google.com/uc?export=view&id=11mLM71P06bvVuM1-A3ErbIGxG5eHT7BH",
+  "https://drive.google.com/uc?export=view&id=1spRDWxy_mhSXJwZP_YzD-Yrg0r3SWZBb",
+  "https://drive.google.com/uc?export=view&id=1jDbGZ7PsQD0vuv3fDYJifgfH7IIn10Tc",
+  "https://drive.google.com/uc?export=view&id=1-Dcxn89_cx_ZISOqvQnt_jc8zc471Iwt",
+  "https://drive.google.com/uc?export=view&id=1Lj0HMdI9WRm45bHnc27IlpSBZKVEeYnk"
 ];
 
 export default function MentenantaLaptop() {
