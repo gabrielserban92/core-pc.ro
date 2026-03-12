@@ -7,7 +7,7 @@ import Link from 'next/link';
 const features = [
   {
     title: 'Livrare Gratuită\n(Tur-Retur)',
-    description: 'Pentru comenzi și servicii ce depășesc 499,99 lei, transportul este asigurat personal de noi, în zona de nord a Ilfovului.',
+    description: 'Pentru comenzi și servicii ce depășesc 449,99 lei, transportul este asigurat personal de noi, conform tabelului.',
     icon: Truck,
     color: 'text-blue-400',
     bg: 'bg-blue-400/10',
@@ -16,7 +16,7 @@ const features = [
   },
   {
     title: 'Transport personalizat',
-    description: 'Nu te încadrezi la transport gratuit? Beneficiezi de transport asigurat de noi în Nordul Ilfovului, de la 50 lei.',
+    description: 'Nu te încadrezi la transport gratuit? Beneficiezi de transport asigurat de noi conform tabelului, de la 50 lei.',
     icon: MapPin,
     color: 'text-cyan-400',
     bg: 'bg-cyan-400/10',

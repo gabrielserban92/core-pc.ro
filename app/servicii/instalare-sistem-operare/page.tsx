@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/Windows_11_Installation.jpg?raw=true"
+  "https://drive.google.com/uc?export=view&id=1DUJvN0gN5MciOw27p_1O8WHtrzZST0ru"
 ];
 
 export default function InstalareSistemOperare() {

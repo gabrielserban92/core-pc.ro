@@ -9,9 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://picsum.photos/seed/office1/800/800",
-  "https://picsum.photos/seed/office2/800/800",
-  "https://picsum.photos/seed/office3/800/800"
+  "https://drive.google.com/uc?export=view&id=1nFz0AcXcz0s4T3jl6zUDqgctZpvrKQIg"
 ];
 
 export default function InstalareOffice() {

@@ -14,7 +14,7 @@ const softwareServices = [
     price: 'de la 149,99 RON',
     color: 'text-blue-400',
     bg: 'bg-blue-400/10',
-    image: 'https://raw.githubusercontent.com/gabrielserban92/core-pc.ro/main/assets/Windows_11_Installation.jpg'
+    image: 'https://drive.google.com/uc?export=view&id=1DUJvN0gN5MciOw27p_1O8WHtrzZST0ru'
   },
   {
     id: 'optimizare-sistem-operare',
@@ -24,7 +24,8 @@ const softwareServices = [
     price: 'de la 99,99 RON',
     color: 'text-rose-400',
     bg: 'bg-rose-400/10',
-    image: 'https://picsum.photos/seed/optimizare/600/400'
+    image: 'https://drive.google.com/uc?export=view&id=1pghgSmS7GxhlySZu6AsUoJuwhSjfT1dn',
+    imageFit: 'object-contain'
   },
   {
     id: 'configurare-pc',
@@ -34,7 +35,7 @@ const softwareServices = [
     price: 'de la 99,99 RON',
     color: 'text-cyan-400',
     bg: 'bg-cyan-400/10',
-    image: 'https://picsum.photos/seed/configurare/600/400'
+    image: 'https://drive.google.com/uc?export=view&id=18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo'
   },
   {
     id: 'instalare-office',
@@ -44,7 +45,7 @@ const softwareServices = [
     price: 'de la 99,99 RON',
     color: 'text-orange-400',
     bg: 'bg-orange-400/10',
-    image: 'https://picsum.photos/seed/office/600/400'
+    image: 'https://drive.google.com/uc?export=view&id=1nFz0AcXcz0s4T3jl6zUDqgctZpvrKQIg'
   },
   {
     id: 'update-bios',
@@ -54,7 +55,7 @@ const softwareServices = [
     price: 'de la 99,99 RON',
     color: 'text-purple-400',
     bg: 'bg-purple-400/10',
-    image: 'https://picsum.photos/seed/bios/600/400'
+    image: 'https://drive.google.com/uc?export=view&id=16VZSYlPxIVk5gjlv2ga2CddPeLt_hyxK'
   }
 ];
 
@@ -77,7 +78,8 @@ const hardwareServices = [
     price: 'de la 399,99 RON',
     color: 'text-cyan-400',
     bg: 'bg-cyan-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1-86lYiLNCHDZEd6461Ow4aJzMGP7cwxS'
+    image: 'https://drive.google.com/uc?export=view&id=1-86lYiLNCHDZEd6461Ow4aJzMGP7cwxS',
+    imageFit: 'object-contain'
   },
   {
     id: 'mentenanta-laptop',
@@ -97,7 +99,8 @@ const hardwareServices = [
     price: 'de la 249,99 RON',
     color: 'text-purple-400',
     bg: 'bg-purple-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1YsEtxVEuR3ntCEd35LRrPo0r0UQGb5h2'
+    image: 'https://drive.google.com/uc?export=view&id=1j6vX-hr5vbhmV_kF9RSaJYoxFSR4jwh_',
+    imageFit: 'object-contain'
   },
   {
     id: 'inlocuire-componente',
@@ -168,7 +171,7 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => (
           src={service.image}
           alt={service.title}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className={`${service.imageFit || 'object-cover'} group-hover:scale-105 transition-transform duration-500`}
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent" />

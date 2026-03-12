@@ -9,9 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://picsum.photos/seed/bios1/800/800",
-  "https://picsum.photos/seed/bios2/800/800",
-  "https://picsum.photos/seed/bios3/800/800"
+  "https://drive.google.com/uc?export=view&id=16VZSYlPxIVk5gjlv2ga2CddPeLt_hyxK"
 ];
 
 export default function UpdateBios() {

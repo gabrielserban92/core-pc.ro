@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1YsEtxVEuR3ntCEd35LRrPo0r0UQGb5h2",
+  "https://drive.google.com/uc?export=view&id=1j6vX-hr5vbhmV_kF9RSaJYoxFSR4jwh_",
   "https://drive.google.com/uc?export=view&id=1E7TShkrVI2zYnnHxoWkRp1i0IUoLeGmd",
   "https://drive.google.com/uc?export=view&id=1-subTa2AhKdXl_N57X8czv1J_qS1E0ar",
   "https://drive.google.com/uc?export=view&id=1rBKIir_m0NsKJTzTVMB2VP_oBfLijfyN",

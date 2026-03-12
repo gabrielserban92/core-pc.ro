@@ -17,9 +17,9 @@ const navLinks = [
       { name: 'Web Design', href: '/#web-design' },
     ]
   },
+  { name: 'Livrare & Ridicare', href: '/livrare-ridicare' },
   { name: 'Despre Noi', href: '/#despre' },
   { name: 'Contact', href: '/#contact' },
-  { name: 'FAQ', href: '/#faq' },
 ];
 
 const searchData = [
@@ -27,8 +27,22 @@ const searchData = [
   { title: 'Servicii IT', href: '/#servicii' },
   { title: 'Servicii Hardware', href: '/#hardware' },
   { title: 'Asamblare PC', href: '/servicii/asamblare-pc' },
+  { title: 'Mentenanță PC', href: '/servicii/mentenanta-pc' },
+  { title: 'Mentenanță Laptop', href: '/servicii/mentenanta-laptop' },
+  { title: 'Mentenanță Console', href: '/servicii/mentenanta-console' },
+  { title: 'Înlocuire componente', href: '/servicii/inlocuire-componente' },
   { title: 'Servicii Software', href: '/#software' },
+  { title: 'Instalare sistem operare', href: '/servicii/instalare-sistem-operare' },
+  { title: 'Optimizare sistem operare', href: '/servicii/optimizare-sistem-operare' },
+  { title: 'Configurare PC', href: '/servicii/configurare-pc' },
+  { title: 'Instalare Office', href: '/servicii/instalare-office' },
+  { title: 'Update BIOS', href: '/servicii/update-bios' },
   { title: 'Servicii Web Design', href: '/#web-design' },
+  { title: 'Landing page', href: '/servicii/landing-page' },
+  { title: 'Site prezentare', href: '/servicii/site-prezentare' },
+  { title: 'Magazin online', href: '/servicii/magazin-online' },
+  { title: 'Modificare/actualizare site live', href: '/servicii/modificare-site' },
+  { title: 'Livrare & Ridicare', href: '/livrare-ridicare' },
   { title: 'Despre Noi', href: '/#despre' },
   { title: 'Contact', href: '/#contact' },
   { title: 'Întrebări frecvente (FAQ)', href: '/#faq' },
@@ -153,9 +167,6 @@ export default function Navbar() {
               >
                 <Search className="w-5 h-5" />
               </button>
-              <Link href="/#contact" className="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
-                Programează-te
-              </Link>
             </div>
 
             <div className="-mr-2 flex md:hidden items-center gap-2">

@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://github.com/gabrielserban92/core-pc.ro/blob/main/assets/win11opt.jpg?raw=true"
+  "https://drive.google.com/uc?export=view&id=1pghgSmS7GxhlySZu6AsUoJuwhSjfT1dn"
 ];
 
 export default function OptimizareSistemOperare() {

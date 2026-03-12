@@ -9,9 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://picsum.photos/seed/config1/800/800",
-  "https://picsum.photos/seed/config2/800/800",
-  "https://picsum.photos/seed/config3/800/800"
+  "https://drive.google.com/uc?export=view&id=18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo"
 ];
 
 export default function ConfigurarePC() {
