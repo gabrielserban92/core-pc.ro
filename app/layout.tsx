@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import CookieConsent from '@/components/CookieConsent';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="ro" className={`${inter.variable} scroll-smooth`}>
       <body className="font-sans antialiased bg-black text-white" suppressHydrationWarning>
         {children}
+        <CookieConsent />
       </body>
     </html>
   );
