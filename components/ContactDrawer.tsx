@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Send } from 'lucide-react';
+import { X, Send, Loader2, CheckCircle2, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ContactDrawer() {
   const [isOpen, setIsOpen] = useState(false);
   const [agreed, setAgreed] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
     const handleOpen = () => setIsOpen(true);
@@ -36,17 +38,60 @@ export default function ContactDrawer() {
     if (window.location.hash === '#contact') {
       window.history.pushState('', document.title, window.location.pathname + window.location.search);
     }
+    // Reset form state after closing
+    setTimeout(() => {
+      setStatus('idle');
+      setErrorMessage('');
+      setAgreed(false);
+    }, 300);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!agreed) {
-      alert('Vă rugăm să acceptați politica de confidențialitate.');
+      setStatus('error');
+      setErrorMessage('Vă rugăm să acceptați politica de confidențialitate.');
       return;
     }
-    // Handle form submission
-    alert('Mesajul a fost trimis cu succes!');
-    closeDrawer();
+
+    setStatus('loading');
+    setErrorMessage('');
+
+    const form = e.currentTarget;
+    const formData = {
+      firstName: (form.elements.namedItem('name') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      phone: (form.elements.namedItem('phone') as HTMLInputElement).value,
+      message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'A apărut o eroare la trimiterea mesajului.');
+      }
+
+      setStatus('success');
+      form.reset();
+      setAgreed(false);
+      
+      // Close drawer after 3 seconds
+      setTimeout(() => {
+        closeDrawer();
+      }, 3000);
+    } catch (error) {
+      setStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'A apărut o eroare. Te rugăm să încerci din nou.');
+    }
   };
 
   return (
@@ -89,6 +134,7 @@ export default function ContactDrawer() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     required
                     placeholder="numele si prenumele dvs."
                     className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-xl text-white placeholder:text-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
@@ -102,6 +148,7 @@ export default function ContactDrawer() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     required
                     placeholder="adresa de email"
                     className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-xl text-white placeholder:text-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
@@ -115,6 +162,7 @@ export default function ContactDrawer() {
                   <input
                     type="tel"
                     id="phone"
+                    name="phone"
                     required
                     placeholder="număr de telefon"
                     className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-xl text-white placeholder:text-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
@@ -127,6 +175,7 @@ export default function ContactDrawer() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     required
                     rows={4}
                     placeholder="Mesajul dvs."
@@ -152,13 +201,36 @@ export default function ContactDrawer() {
                   </label>
                 </div>
 
+                {status === 'error' && (
+                  <div className="flex items-center gap-2 text-red-400 bg-red-400/10 p-3 rounded-lg text-sm">
+                    <AlertCircle className="w-5 h-5 shrink-0" />
+                    <p>{errorMessage}</p>
+                  </div>
+                )}
+
+                {status === 'success' && (
+                  <div className="flex items-center gap-2 text-emerald-400 bg-emerald-400/10 p-3 rounded-lg text-sm">
+                    <CheckCircle2 className="w-5 h-5 shrink-0" />
+                    <p>Mesajul a fost trimis cu succes!</p>
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  disabled={!agreed}
+                  disabled={!agreed || status === 'loading'}
                   className="w-full py-4 bg-emerald-500 hover:bg-emerald-400 disabled:bg-zinc-800 disabled:text-gray-500 text-zinc-950 rounded-xl font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 disabled:shadow-none"
                 >
-                  <Send className="w-5 h-5" />
-                  Trimite
+                  {status === 'loading' ? (
+                    <>
+                      Se trimite...
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                    </>
+                  ) : (
+                    <>
+                      Trimite
+                      <Send className="w-5 h-5" />
+                    </>
+                  )}
                 </button>
               </form>
             </div>
