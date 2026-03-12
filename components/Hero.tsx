@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
               <Link
                 href="#software"
-                className="w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25"
+                className="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25"
               >
                 Vezi Serviciile
                 <ArrowRight className="w-5 h-5" />

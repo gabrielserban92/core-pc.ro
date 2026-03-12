@@ -19,13 +19,13 @@ export default function Footer() {
               Servicii profesionale de mentenanță PC, asamblare și reparații pentru laptop-uri și console.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-emerald-500/20 transition-colors">
+              <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-emerald-500/20 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-emerald-500/20 transition-colors">
+              <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-emerald-500/20 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-emerald-500/20 transition-colors">
+              <a href="#" aria-label="Youtube" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-emerald-500/20 transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
@@ -93,7 +93,7 @@ export default function Footer() {
               />
               <button 
                 type="submit"
-                className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg px-4 py-3 transition-colors"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg px-4 py-3 transition-colors"
               >
                 Abonează-te
               </button>
@@ -103,7 +103,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex items-center justify-center">
-          <p className="text-gray-500 text-sm text-center">
+          <p className="text-gray-400 text-sm text-center">
             &copy; {new Date().getFullYear()} core-pc.ro. Toate drepturile rezervate.
           </p>
         </div>
