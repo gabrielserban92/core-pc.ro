@@ -18,7 +18,7 @@ export default function ContactForm() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
+            className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
           >
             Contactează-<span className="text-emerald-400">ne</span>
           </motion.h2>
