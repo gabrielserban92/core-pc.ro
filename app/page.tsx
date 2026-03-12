@@ -4,7 +4,6 @@ import Hero from '@/components/Hero';
 
 const Services = dynamic(() => import('@/components/Services'));
 const Features = dynamic(() => import('@/components/Features'));
-const ContactForm = dynamic(() => import('@/components/ContactForm'));
 const FAQ = dynamic(() => import('@/components/FAQ'));
 const Footer = dynamic(() => import('@/components/Footer'));
 const FloatingActions = dynamic(() => import('@/components/FloatingActions'));
@@ -16,7 +15,6 @@ export default function Home() {
       <Hero />
       <Services />
       <Features />
-      <ContactForm />
       <FAQ />
       <Footer />
       <FloatingActions />

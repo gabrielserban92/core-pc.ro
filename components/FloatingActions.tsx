@@ -75,13 +75,13 @@ export default function FloatingActions() {
           href="https://wa.me/40760721202"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-14 h-14 bg-zinc-800 hover:bg-zinc-700 rounded-full flex items-center justify-center shadow-lg transition-colors duration-300 border border-white/10 hover:border-emerald-400"
+          className="w-12 h-12 bg-zinc-800 hover:bg-zinc-700 rounded-full flex items-center justify-center shadow-lg transition-colors duration-300 border border-white/10 hover:border-emerald-400"
           aria-label="Contact on WhatsApp"
         >
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            width="28" 
-            height="28" 
+            width="24" 
+            height="24" 
             viewBox="0 0 24 24" 
             fill="#25D366"
           >

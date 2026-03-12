@@ -46,18 +46,21 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
               <Link
-                href="#servicii"
+                href="#software"
                 className="w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25"
               >
                 Vezi Serviciile
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link
-                href="#contact"
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.dispatchEvent(new Event('open-contact-drawer'));
+                }}
                 className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-xl font-semibold transition-all border border-white/20 flex items-center justify-center backdrop-blur-sm"
               >
                 Contactează-ne
-              </Link>
+              </button>
             </div>
 
             <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 text-left max-w-2xl mx-auto">

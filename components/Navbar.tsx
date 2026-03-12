@@ -121,13 +121,25 @@ export default function Navbar() {
                     onMouseEnter={() => setActiveDropdown(link.name)}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
-                    <Link
-                      href={link.href}
-                      className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-1"
-                    >
-                      {link.name}
-                      {link.subItems && <ChevronDown className="w-4 h-4" />}
-                    </Link>
+                    {link.name === 'Contact' ? (
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.dispatchEvent(new Event('open-contact-drawer'));
+                        }}
+                        className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-lg shadow-emerald-500/25 ml-2"
+                      >
+                        {link.name}
+                      </button>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-1"
+                      >
+                        {link.name}
+                        {link.subItems && <ChevronDown className="w-4 h-4" />}
+                      </Link>
+                    )}
                     
                     {link.subItems && (
                       <AnimatePresence>
@@ -200,14 +212,27 @@ export default function Navbar() {
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {navLinks.map((link) => (
                   <div key={link.name}>
-                    <Link
-                      href={link.href}
-                      onClick={() => !link.subItems && setIsOpen(false)}
-                      className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
-                    >
-                      {link.name}
-                      {link.subItems && <ChevronDown className="w-4 h-4" />}
-                    </Link>
+                    {link.name === 'Contact' ? (
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          window.dispatchEvent(new Event('open-contact-drawer'));
+                        }}
+                        className="w-full text-left bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-3 rounded-md text-base font-medium transition-colors mt-2"
+                      >
+                        {link.name}
+                      </button>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        onClick={() => !link.subItems && setIsOpen(false)}
+                        className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
+                      >
+                        {link.name}
+                        {link.subItems && <ChevronDown className="w-4 h-4" />}
+                      </Link>
+                    )}
                     {link.subItems && (
                       <div className="pl-6 space-y-1 mt-1">
                         {link.subItems.map((subItem) => (

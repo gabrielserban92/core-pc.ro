@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import CookieConsent from '@/components/CookieConsent';
+import ContactDrawer from '@/components/ContactDrawer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-black text-white" suppressHydrationWarning>
         {children}
         <CookieConsent />
+        <ContactDrawer />
       </body>
     </html>
   );
