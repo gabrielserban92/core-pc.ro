@@ -73,7 +73,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <MapPin className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                <span>Sediu social: Ciolpani, jud Ilfov, Strada Scolii nr. 149n.</span>
+                <span>Sediu social: Ciolpani, jud. Ilfov, Strada Școlii nr. 149n.</span>
               </li>
             </ul>
           </div>

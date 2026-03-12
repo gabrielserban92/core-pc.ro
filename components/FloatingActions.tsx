@@ -69,7 +69,7 @@ export default function FloatingActions() {
       {/* WhatsApp Button */}
       <div className="group relative flex items-center">
         <div className="absolute right-full mr-4 px-3 py-2 bg-zinc-900 text-white text-sm font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none border border-white/10 shadow-xl">
-          Scrie-ne pe Whats&apos;App
+          Scrie-ne pe WhatsApp
         </div>
         <a
           href="https://wa.me/40760721202"

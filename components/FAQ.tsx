@@ -3,11 +3,18 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 const faqs = [
   {
     question: 'Cât durează o asamblare PC?',
-    answer: 'În mod normal, o asamblare PC durează între 2 și 4 ore, în funcție de complexitatea build-ului și de cable management. Dacă aduci componentele dimineața, de obicei îl poți ridica în aceeași zi.'
+    answer: (
+      <div className="space-y-4">
+        <p>Asamblarea unui PC durează, în medie, între 6 și 8 ore, în funcție de complexitatea componentelor și de atenția acordată managementului cablurilor.</p>
+        <p>Predare dimineața: Ridicare în aceeași zi.</p>
+        <p>Predare după ora 12:00: Livrare a doua zi, până la ora 12:00.</p>
+      </div>
+    )
   },
   {
     question: 'Oferiți garanție pentru serviciile prestate?',
@@ -19,11 +26,27 @@ const faqs = [
   },
   {
     question: 'Ce pastă termoconductoare folosiți?',
-    answer: 'Folosim doar paste termoconductoare premium, precum Thermal Grizzly Kryonaut, Arctic MX-6 sau Noctua NT-H2, în funcție de necesitățile sistemului tău.'
+    answer: 'Folosim doar paste termoconductoare premium, precum Arctic MX-6 sau Deepcool DM9, în funcție de necesitățile sistemului tău.'
   },
   {
     question: 'Cât costă o diagnosticare?',
     answer: 'Diagnosticarea este gratuită dacă alegi să repari dispozitivul la noi. În cazul în care renunți la reparație după diagnosticare, taxa este de 50 RON.'
+  },
+  {
+    question: 'Beneficiez de livrare gratuită tur-retur?',
+    answer: (
+      <>
+        Pentru a consulta lista localităților în care oferim serviciul de livrare gratuită tur-retur livrate personal de noi, te rugăm să consulți lista <Link href="#" className="text-emerald-400 hover:text-emerald-300 transition-colors">aici</Link>.
+      </>
+    )
+  },
+  {
+    question: 'Cât costă serviciul de livrare tur-retur oferit personal?',
+    answer: (
+      <>
+        Pentru a vedea cât costă transportul oferit de noi tur-retur pentru comenzile ce nu depășesc 499,99 lei și se află în nordul capitalei, te rugăm să consulți lista <Link href="#" className="text-emerald-400 hover:text-emerald-300 transition-colors">aici</Link>.
+      </>
+    )
   }
 ];
 

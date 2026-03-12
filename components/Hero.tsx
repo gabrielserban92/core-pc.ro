@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28">
       {/* Background Image */}
       <Image
-        src="https://picsum.photos/seed/motherboard/1920/1080"
+        src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=1920&auto=format&fit=crop"
         alt="PC Maintenance Background"
         fill
         className="object-cover z-0"

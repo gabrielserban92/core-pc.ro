@@ -106,8 +106,8 @@ export default function ContactForm() {
             {/* Right Column - Image */}
             <div className="relative rounded-2xl overflow-hidden hidden lg:block min-h-[600px]">
               <Image
-                src="https://picsum.photos/seed/techsetup/800/1000"
-                alt="Tech Setup"
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop"
+                alt="IT Hardware Technician"
                 fill
                 className="object-cover"
                 referrerPolicy="no-referrer"

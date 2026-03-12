@@ -10,23 +10,25 @@ const navLinks = [
   { name: 'Acasă', href: '/' },
   { 
     name: 'Servicii IT', 
-    href: '#servicii',
+    href: '/#servicii',
     subItems: [
-      { name: 'Hardware', href: '/servicii/hardware' },
-      { name: 'Software', href: '#software' },
+      { name: 'Hardware', href: '/#hardware' },
+      { name: 'Software', href: '/#software' },
+      { name: 'Web Design', href: '/#web-design' },
     ]
   },
-  { name: 'Despre Noi', href: '#despre' },
-  { name: 'Contact', href: '#contact' },
-  { name: 'FAQ', href: '#faq' },
+  { name: 'Despre Noi', href: '/#despre' },
+  { name: 'Contact', href: '/#contact' },
+  { name: 'FAQ', href: '/#faq' },
 ];
 
 const searchData = [
   { title: 'Acasă', href: '/' },
   { title: 'Servicii IT', href: '/#servicii' },
-  { title: 'Reparații Hardware', href: '/servicii/hardware' },
-  { title: 'Asamblare PC', href: '/servicii/hardware/asamblare-pc' },
+  { title: 'Servicii Hardware', href: '/#hardware' },
+  { title: 'Asamblare PC', href: '/servicii/asamblare-pc' },
   { title: 'Servicii Software', href: '/#software' },
+  { title: 'Servicii Web Design', href: '/#web-design' },
   { title: 'Despre Noi', href: '/#despre' },
   { title: 'Contact', href: '/#contact' },
   { title: 'Întrebări frecvente (FAQ)', href: '/#faq' },
@@ -151,7 +153,7 @@ export default function Navbar() {
               >
                 <Search className="w-5 h-5" />
               </button>
-              <Link href="#contact" className="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+              <Link href="/#contact" className="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
                 Programează-te
               </Link>
             </div>
