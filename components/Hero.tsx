@@ -13,6 +13,7 @@ export default function Hero() {
         src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?q=80&w=1920&auto=format&fit=crop"
         alt="PC Maintenance Background"
         fill
+        sizes="100vw"
         className="object-cover z-0"
         referrerPolicy="no-referrer"
         priority

@@ -109,6 +109,7 @@ export default function ContactForm() {
                 src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop"
                 alt="IT Hardware Technician"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
                 referrerPolicy="no-referrer"
               />

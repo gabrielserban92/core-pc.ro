@@ -171,6 +171,7 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => (
           src={service.image}
           alt={service.title}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
           className={`${service.imageFit || 'object-cover'} group-hover:scale-105 transition-transform duration-500`}
           referrerPolicy="no-referrer"
         />

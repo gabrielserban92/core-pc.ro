@@ -12,7 +12,7 @@ const features = [
     color: 'text-blue-400',
     bg: 'bg-blue-400/10',
     linkText: 'zone incluse ->',
-    linkHref: '#'
+    linkHref: '/livrare-ridicare'
   },
   {
     title: 'Transport personalizat',
@@ -21,7 +21,7 @@ const features = [
     color: 'text-cyan-400',
     bg: 'bg-cyan-400/10',
     linkText: 'Grilă costuri transport ->',
-    linkHref: '#'
+    linkHref: '/livrare-ridicare'
   },
   {
     title: 'Livrare rapidă',

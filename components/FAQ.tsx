@@ -36,7 +36,7 @@ const faqs = [
     question: 'Beneficiez de livrare gratuită tur-retur?',
     answer: (
       <>
-        Pentru a consulta lista localităților în care oferim serviciul de livrare gratuită tur-retur livrate personal de noi, te rugăm să consulți lista <Link href="#" className="text-emerald-400 hover:text-emerald-300 transition-colors">aici</Link>.
+        Pentru a consulta lista localităților în care oferim serviciul de livrare gratuită tur-retur livrate personal de noi, te rugăm să consulți lista <Link href="/livrare-ridicare" className="text-emerald-400 hover:text-emerald-300 transition-colors">aici</Link>.
       </>
     )
   },
@@ -44,7 +44,7 @@ const faqs = [
     question: 'Cât costă serviciul de livrare tur-retur oferit personal?',
     answer: (
       <>
-        Pentru a vedea cât costă transportul oferit de noi tur-retur pentru comenzile ce nu depășesc 499,99 lei și se află în nordul capitalei, te rugăm să consulți lista <Link href="#" className="text-emerald-400 hover:text-emerald-300 transition-colors">aici</Link>.
+        Pentru a vedea cât costă transportul oferit de noi tur-retur pentru comenzile ce nu depășesc 499,99 lei și se află în nordul capitalei, te rugăm să consulți lista <Link href="/livrare-ridicare" className="text-emerald-400 hover:text-emerald-300 transition-colors">aici</Link>.
       </>
     )
   }

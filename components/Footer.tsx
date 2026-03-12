@@ -46,7 +46,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                <Link href="/livrare-ridicare" className="text-gray-400 hover:text-emerald-400 transition-colors">
                   Livrare & retur
                 </Link>
               </li>
