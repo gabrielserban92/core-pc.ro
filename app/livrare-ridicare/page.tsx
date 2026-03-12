@@ -10,7 +10,7 @@ export default function LivrareRidicare() {
     <main className="min-h-screen bg-zinc-950 text-white selection:bg-emerald-500/30">
       <Navbar />
       
-      <div className="pt-32 pb-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="pt-40 lg:pt-48 pb-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Livrare & Ridicare</h1>
         
         <div className="space-y-8">
