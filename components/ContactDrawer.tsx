@@ -155,7 +155,7 @@ export default function ContactDrawer() {
                 <button
                   type="submit"
                   disabled={!agreed}
-                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 disabled:bg-zinc-800 disabled:text-gray-500 text-white rounded-xl font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 disabled:shadow-none"
+                  className="w-full py-4 bg-emerald-500 hover:bg-emerald-400 disabled:bg-zinc-800 disabled:text-gray-500 text-zinc-950 rounded-xl font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 disabled:shadow-none"
                 >
                   <Send className="w-5 h-5" />
                   Trimite

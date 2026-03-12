@@ -93,7 +93,7 @@ export default function Footer() {
               />
               <button 
                 type="submit"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg px-4 py-3 transition-colors"
+                className="bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold rounded-lg px-4 py-3 transition-colors"
               >
                 Abonează-te
               </button>

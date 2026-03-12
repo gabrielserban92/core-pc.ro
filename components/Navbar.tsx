@@ -127,7 +127,7 @@ export default function Navbar() {
                           e.preventDefault();
                           window.dispatchEvent(new Event('open-contact-drawer'));
                         }}
-                        className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-lg shadow-emerald-500/25 ml-2"
+                        className="bg-emerald-500 hover:bg-emerald-400 text-zinc-950 px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-emerald-500/25 ml-2"
                       >
                         {link.name}
                       </button>
@@ -219,7 +219,7 @@ export default function Navbar() {
                           setIsOpen(false);
                           window.dispatchEvent(new Event('open-contact-drawer'));
                         }}
-                        className="w-full text-left bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-3 rounded-md text-base font-medium transition-colors mt-2"
+                        className="w-full text-left bg-emerald-500 hover:bg-emerald-400 text-zinc-950 px-3 py-3 rounded-md text-base font-bold transition-colors mt-2"
                       >
                         {link.name}
                       </button>
