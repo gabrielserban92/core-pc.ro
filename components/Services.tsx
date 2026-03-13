@@ -65,7 +65,7 @@ const hardwareServices = [
     title: 'Asamblare PC',
     description: 'Asamblare profesională a componentelor tale, cu un cable management impecabil.',
     icon: Layers,
-    price: 'de la 499,99 lei',
+    price: 'de la 449,99 lei',
     color: 'text-emerald-400',
     bg: 'bg-emerald-400/10',
     image: 'https://drive.google.com/uc?export=view&id=1Fx9SkU5bLGbgiyex8EnBMK0FdYgM_VbA'

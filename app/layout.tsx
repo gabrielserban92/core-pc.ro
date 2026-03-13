@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://core-pc.ro'),
   title: 'core-pc.ro | Mentenanță PC & Laptop',
   description: 'Magazin online pentru servicii de mentenanță PC, laptop și console. Asamblare, curățare, optimizare.',
 };

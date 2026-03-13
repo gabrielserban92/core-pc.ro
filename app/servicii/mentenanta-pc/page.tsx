@@ -126,7 +126,7 @@ export default function MentenantaPC() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                    <span>Schimbare pastă termoconductoare (Arctic MX-4 / Thermal Grizzly Kryonaut)</span>
+                    <span>Schimbare pastă termoconductoare (Arctic MX-6 / Deepcool DM9)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />

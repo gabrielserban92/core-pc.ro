@@ -103,7 +103,7 @@ export default function AsamblarePC() {
             <div className="bg-zinc-900 border border-white/10 rounded-2xl p-6 mb-8 flex flex-col sm:flex-row items-center justify-between gap-6">
               <div>
                 <p className="text-gray-400 text-sm mb-1">Preț pornire</p>
-                <div className="text-4xl font-bold text-emerald-400">499,99 lei</div>
+                <div className="text-4xl font-bold text-emerald-400">449,99 lei</div>
               </div>
               <Link href="/#contact" className="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-xl transition-colors flex items-center justify-center gap-2">
                 <Clock className="w-5 h-5" />
