@@ -11,8 +11,42 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://core-pc.ro'),
-  title: 'core-pc.ro | Mentenanță PC & Laptop',
-  description: 'Magazin online pentru servicii de mentenanță PC, laptop și console. Asamblare, curățare, optimizare.',
+  title: {
+    default: 'Core-PC | Servicii Profesionale Mentenanță PC & Laptop',
+    template: '%s | Core-PC',
+  },
+  description: 'Servicii profesionale de mentenanță IT: asamblare PC, curățare laptop, instalare Windows, optimizare și reparații console. Intervenții rapide și sigure.',
+  keywords: ['mentenanta pc', 'reparatii laptop', 'asamblare pc', 'instalare windows', 'curatare praf laptop', 'reparatii console', 'service it', 'optimizare pc'],
+  authors: [{ name: 'Core-PC' }],
+  creator: 'Core-PC',
+  publisher: 'Core-PC',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Core-PC | Servicii Profesionale Mentenanță PC & Laptop',
+    description: 'Servicii profesionale de mentenanță IT: asamblare PC, curățare laptop, instalare Windows, optimizare și reparații console.',
+    url: 'https://core-pc.ro',
+    siteName: 'Core-PC',
+    locale: 'ro_RO',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

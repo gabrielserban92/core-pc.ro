@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1pghgSmS7GxhlySZu6AsUoJuwhSjfT1dn"
+  "https://lh3.googleusercontent.com/d/1pghgSmS7GxhlySZu6AsUoJuwhSjfT1dn"
 ];
 
 export default function OptimizareSistemOperare() {
@@ -130,10 +130,10 @@ export default function OptimizareSistemOperare() {
               <p className="text-base text-white font-medium bg-white/5 p-4 rounded-xl border border-white/10">🚀 Dacă vrei să îți aduci sistemul la performanțele sale maxime, contactează-ne acum!</p>
 
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-                <p className="flex items-center gap-2 font-medium text-white">
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Rocket className="w-5 h-5 text-emerald-400" />
-                  <span className="text-emerald-400">Intervenție fizică</span> conform zonelor incluse.
-                </p>
+                  <span><span className="text-emerald-400">Intervenție fizică</span> conform zonelor incluse.</span>
+                </Link>
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ const softwareServices = [
     price: 'de la 149,99 RON',
     color: 'text-blue-400',
     bg: 'bg-blue-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1DUJvN0gN5MciOw27p_1O8WHtrzZST0ru'
+    image: 'https://lh3.googleusercontent.com/d/1DUJvN0gN5MciOw27p_1O8WHtrzZST0ru'
   },
   {
     id: 'optimizare-sistem-operare',
@@ -24,7 +24,7 @@ const softwareServices = [
     price: 'de la 99,99 RON',
     color: 'text-rose-400',
     bg: 'bg-rose-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1pghgSmS7GxhlySZu6AsUoJuwhSjfT1dn',
+    image: 'https://lh3.googleusercontent.com/d/1pghgSmS7GxhlySZu6AsUoJuwhSjfT1dn',
     imageFit: 'object-contain'
   },
   {
@@ -35,7 +35,7 @@ const softwareServices = [
     price: 'de la 99,99 RON',
     color: 'text-cyan-400',
     bg: 'bg-cyan-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo'
+    image: 'https://lh3.googleusercontent.com/d/18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo'
   },
   {
     id: 'instalare-office',
@@ -45,7 +45,7 @@ const softwareServices = [
     price: 'de la 99,99 RON',
     color: 'text-orange-400',
     bg: 'bg-orange-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1nFz0AcXcz0s4T3jl6zUDqgctZpvrKQIg'
+    image: 'https://lh3.googleusercontent.com/d/1nFz0AcXcz0s4T3jl6zUDqgctZpvrKQIg'
   },
   {
     id: 'update-bios',
@@ -55,7 +55,7 @@ const softwareServices = [
     price: 'de la 99,99 RON',
     color: 'text-purple-400',
     bg: 'bg-purple-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=16VZSYlPxIVk5gjlv2ga2CddPeLt_hyxK'
+    image: 'https://lh3.googleusercontent.com/d/16VZSYlPxIVk5gjlv2ga2CddPeLt_hyxK'
   }
 ];
 
@@ -68,7 +68,7 @@ const hardwareServices = [
     price: 'de la 449,99 lei',
     color: 'text-emerald-400',
     bg: 'bg-emerald-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1Fx9SkU5bLGbgiyex8EnBMK0FdYgM_VbA'
+    image: 'https://lh3.googleusercontent.com/d/1Fx9SkU5bLGbgiyex8EnBMK0FdYgM_VbA'
   },
   {
     id: 'mentenanta-pc',
@@ -78,7 +78,7 @@ const hardwareServices = [
     price: 'de la 399,99 RON',
     color: 'text-cyan-400',
     bg: 'bg-cyan-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1-86lYiLNCHDZEd6461Ow4aJzMGP7cwxS',
+    image: 'https://lh3.googleusercontent.com/d/1-86lYiLNCHDZEd6461Ow4aJzMGP7cwxS',
     imageFit: 'object-contain'
   },
   {
@@ -89,7 +89,7 @@ const hardwareServices = [
     price: 'de la 299,99 RON',
     color: 'text-indigo-400',
     bg: 'bg-indigo-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1AUOpVX008PrXqykIXj5XF87YkEkbnU5l'
+    image: 'https://lh3.googleusercontent.com/d/1AUOpVX008PrXqykIXj5XF87YkEkbnU5l'
   },
   {
     id: 'mentenanta-console',
@@ -99,7 +99,7 @@ const hardwareServices = [
     price: 'de la 249,99 RON',
     color: 'text-purple-400',
     bg: 'bg-purple-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1j6vX-hr5vbhmV_kF9RSaJYoxFSR4jwh_',
+    image: 'https://lh3.googleusercontent.com/d/1j6vX-hr5vbhmV_kF9RSaJYoxFSR4jwh_',
     imageFit: 'object-contain'
   },
   {
@@ -110,7 +110,7 @@ const hardwareServices = [
     price: 'de la 49,99 RON',
     color: 'text-orange-400',
     bg: 'bg-orange-400/10',
-    image: 'https://drive.google.com/uc?export=view&id=1IrwxE-nflFkE-lkPxY5mCEseF9W2GfCm'
+    image: 'https://lh3.googleusercontent.com/d/1IrwxE-nflFkE-lkPxY5mCEseF9W2GfCm'
   }
 ];
 
@@ -165,7 +165,10 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => (
     transition={{ duration: 0.5, delay: index * 0.1 }}
     className="h-full"
   >
-    <div className="bg-zinc-900 border border-white/5 rounded-2xl overflow-hidden h-full hover:border-emerald-500/30 transition-all group flex flex-col">
+    <Link 
+      href={`/servicii/${service.id}`}
+      className="bg-zinc-900 border border-white/5 rounded-2xl overflow-hidden h-full hover:border-emerald-500/30 transition-all group flex flex-col block"
+    >
       <div className="relative h-48 w-full overflow-hidden shrink-0">
         <Image
           src={service.image}
@@ -182,7 +185,7 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => (
       </div>
       
       <div className="p-6 flex flex-col flex-grow">
-        <h4 className="text-xl font-bold text-white mb-3">
+        <h4 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
           {service.title}
         </h4>
         
@@ -194,15 +197,9 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => (
           <span className="text-white font-medium text-sm">
             {service.price}
           </span>
-          <Link 
-            href={`/servicii/${service.id}`}
-            className="text-emerald-400 text-sm font-semibold hover:text-emerald-300 transition-colors"
-          >
-            Detalii &rarr;
-          </Link>
         </div>
       </div>
-    </div>
+    </Link>
   </motion.div>
 );
 

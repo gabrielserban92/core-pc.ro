@@ -33,15 +33,15 @@ export default function Hero() {
               <span>Diagnosticare rapidă</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-              De toate pentru <br />
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+              Servicii Profesionale de <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
-                device-ul tău!
+                Mentenanță PC & Laptop
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Aici vei găsi diferite servicii și soluții pentru dispozitivele tale, în special pentru laptop-uri, desktop-uri sau console.
+              Aici vei găsi soluții complete pentru dispozitivele tale: reparații hardware, instalare Windows, asamblare PC, curățare de praf și optimizare pentru laptopuri și console.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">

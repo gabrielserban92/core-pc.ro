@@ -9,12 +9,12 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1AUOpVX008PrXqykIXj5XF87YkEkbnU5l",
-  "https://drive.google.com/uc?export=view&id=11mLM71P06bvVuM1-A3ErbIGxG5eHT7BH",
-  "https://drive.google.com/uc?export=view&id=1spRDWxy_mhSXJwZP_YzD-Yrg0r3SWZBb",
-  "https://drive.google.com/uc?export=view&id=1jDbGZ7PsQD0vuv3fDYJifgfH7IIn10Tc",
-  "https://drive.google.com/uc?export=view&id=1-Dcxn89_cx_ZISOqvQnt_jc8zc471Iwt",
-  "https://drive.google.com/uc?export=view&id=1Lj0HMdI9WRm45bHnc27IlpSBZKVEeYnk"
+  "https://lh3.googleusercontent.com/d/1AUOpVX008PrXqykIXj5XF87YkEkbnU5l",
+  "https://lh3.googleusercontent.com/d/11mLM71P06bvVuM1-A3ErbIGxG5eHT7BH",
+  "https://lh3.googleusercontent.com/d/1spRDWxy_mhSXJwZP_YzD-Yrg0r3SWZBb",
+  "https://lh3.googleusercontent.com/d/1jDbGZ7PsQD0vuv3fDYJifgfH7IIn10Tc",
+  "https://lh3.googleusercontent.com/d/1-Dcxn89_cx_ZISOqvQnt_jc8zc471Iwt",
+  "https://lh3.googleusercontent.com/d/1Lj0HMdI9WRm45bHnc27IlpSBZKVEeYnk"
 ];
 
 export default function MentenantaLaptop() {
@@ -134,14 +134,14 @@ export default function MentenantaLaptop() {
               </div>
 
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-                <p className="flex items-center gap-2 font-medium text-white">
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Rocket className="w-5 h-5 text-emerald-400" />
-                  <span className="text-emerald-400">Livrare personală</span> conform zonelor incluse.
-                </p>
-                <p className="flex items-center gap-2 font-medium text-white">
+                  <span><span className="text-emerald-400">Livrare personală</span> conform zonelor incluse.</span>
+                </Link>
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Package className="w-5 h-5 text-emerald-400" />
-                  Livrare gratuită prin curier.
-                </p>
+                  <span>Livrare gratuită prin curier.</span>
+                </Link>
               </div>
             </div>
           </div>

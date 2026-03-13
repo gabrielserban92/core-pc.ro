@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo"
+  "https://lh3.googleusercontent.com/d/18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo"
 ];
 
 export default function ConfigurarePC() {
@@ -138,10 +138,10 @@ export default function ConfigurarePC() {
                   <Monitor className="w-5 h-5 text-emerald-400" />
                   <span className="text-emerald-400">Disponibil și online!</span> Consultanța se poate realiza prin apel sau mesaje.
                 </p>
-                <p className="flex items-center gap-2 font-medium text-white">
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Rocket className="w-5 h-5 text-emerald-400" />
-                  <span className="text-emerald-400">Disponibil fizic</span> la fața locului, pentru a discuta toate detaliile.
-                </p>
+                  <span><span className="text-emerald-400">Disponibil fizic</span> la fața locului, pentru a discuta toate detaliile.</span>
+                </Link>
               </div>
             </div>
           </div>

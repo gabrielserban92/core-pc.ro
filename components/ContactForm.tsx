@@ -16,10 +16,22 @@ export default function ContactForm() {
   
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
+  const [phoneWarning, setPhoneWarning] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    if (name === 'phone') {
+      // Check if user typed invalid characters
+      if (/[^0-9+]/.test(value)) {
+        setPhoneWarning(true);
+        setTimeout(() => setPhoneWarning(false), 3000);
+      }
+      // Permite doar cifre și semnul +
+      const sanitizedValue = value.replace(/[^0-9+]/g, '');
+      setFormData(prev => ({ ...prev, [name]: sanitizedValue }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -152,8 +164,14 @@ export default function ContactForm() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Număr de telefon" 
-                    className="w-full bg-[#2A2A2C] border border-white/5 rounded-xl px-4 py-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
+                    className={`w-full bg-[#2A2A2C] border ${phoneWarning ? 'border-red-500 ring-1 ring-red-500' : 'border-white/5'} rounded-xl px-4 py-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all`}
                   />
+                  {phoneWarning && (
+                    <p className="text-red-400 text-xs mt-2 ml-1 flex items-center gap-1">
+                      <AlertCircle className="w-3 h-3" />
+                      Sunt permise doar cifre și semnul +
+                    </p>
+                  )}
                 </div>
                 
                 <div>

@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1nFz0AcXcz0s4T3jl6zUDqgctZpvrKQIg"
+  "https://lh3.googleusercontent.com/d/1nFz0AcXcz0s4T3jl6zUDqgctZpvrKQIg"
 ];
 
 export default function InstalareOffice() {
@@ -143,10 +143,10 @@ export default function InstalareOffice() {
                   <Monitor className="w-5 h-5 text-emerald-400" />
                   <span className="text-emerald-400">Disponibil și online!</span> Instalarea se poate face rapid prin TeamViewer sau AnyDesk.
                 </p>
-                <p className="flex items-center gap-2 font-medium text-white">
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Rocket className="w-5 h-5 text-emerald-400" />
-                  <span className="text-emerald-400">Intervenție fizică</span> conform zonelor incluse.
-                </p>
+                  <span><span className="text-emerald-400">Intervenție fizică</span> conform zonelor incluse.</span>
+                </Link>
               </div>
             </div>
           </div>

@@ -10,13 +10,13 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1Fx9SkU5bLGbgiyex8EnBMK0FdYgM_VbA",
-  "https://drive.google.com/uc?export=view&id=1tzLE4bJcxhI89M8btxLm8Uh2rkvr_aGZ",
-  "https://drive.google.com/uc?export=view&id=1X8vLL_lIOk0O362pjeuipPeAoc0D_Na3",
-  "https://drive.google.com/uc?export=view&id=1v0KFpdn7P_OrvLTdLdfUou9GlhVOnY17",
-  "https://drive.google.com/uc?export=view&id=1ZEXt2G01CkG8j-ogUiND_sUuI6biXN_4",
-  "https://drive.google.com/uc?export=view&id=17iprrzJpqM7gZ71uQ129ervA1UPQaSir",
-  "https://drive.google.com/uc?export=view&id=18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo"
+  "https://lh3.googleusercontent.com/d/1Fx9SkU5bLGbgiyex8EnBMK0FdYgM_VbA",
+  "https://lh3.googleusercontent.com/d/1tzLE4bJcxhI89M8btxLm8Uh2rkvr_aGZ",
+  "https://lh3.googleusercontent.com/d/1X8vLL_lIOk0O362pjeuipPeAoc0D_Na3",
+  "https://lh3.googleusercontent.com/d/1v0KFpdn7P_OrvLTdLdfUou9GlhVOnY17",
+  "https://lh3.googleusercontent.com/d/1ZEXt2G01CkG8j-ogUiND_sUuI6biXN_4",
+  "https://lh3.googleusercontent.com/d/17iprrzJpqM7gZ71uQ129ervA1UPQaSir",
+  "https://lh3.googleusercontent.com/d/18eRxMMaFgayJ13UKjCPyZj8K7uoTDUHo"
 ];
 
 export default function AsamblarePC() {
@@ -152,14 +152,14 @@ export default function AsamblarePC() {
               <p className="text-base text-white font-medium bg-white/5 p-4 rounded-xl border border-white/10">Sari peste bătăile de cap cu driverele sau cablurile. Cu Asamblarea Premium, primești un PC gata de luptă: îl scoți din cutie, îl pornești și ești direct în lobby-ul de Steam sau Epic. De la noi pleacă testat, la tine ajunge perfect.</p>
 
               <div className="flex flex-col gap-3 pt-4">
-                <p className="flex items-center gap-2 font-medium text-white">
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Rocket className="w-5 h-5 text-emerald-400" />
-                  <span className="text-emerald-400">Livrare personală</span> conform zonelor incluse.
-                </p>
-                <p className="flex items-center gap-2 font-medium text-white">
+                  <span><span className="text-emerald-400">Livrare personală</span> conform zonelor incluse.</span>
+                </Link>
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Package className="w-5 h-5 text-emerald-400" />
-                  Livrare gratuită prin curier.
-                </p>
+                  <span>Livrare gratuită prin curier.</span>
+                </Link>
               </div>
             </div>
           </div>

@@ -9,11 +9,11 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1IrwxE-nflFkE-lkPxY5mCEseF9W2GfCm",
-  "https://drive.google.com/uc?export=view&id=1XTDpH1TFJ13vTAafVm5eQ-cwQIFJ4O3c",
-  "https://drive.google.com/uc?export=view&id=1siGnLsnTjR6hh4tNSv53F30UUd1Y5D9W",
-  "https://drive.google.com/uc?export=view&id=11n9cH4nH13qncJB8ZW91NOOjGXY-LBav",
-  "https://drive.google.com/uc?export=view&id=1hMGzabrw2AnkrE4JA-KpvbQ6mA_Eer66"
+  "https://lh3.googleusercontent.com/d/1IrwxE-nflFkE-lkPxY5mCEseF9W2GfCm",
+  "https://lh3.googleusercontent.com/d/1XTDpH1TFJ13vTAafVm5eQ-cwQIFJ4O3c",
+  "https://lh3.googleusercontent.com/d/1siGnLsnTjR6hh4tNSv53F30UUd1Y5D9W",
+  "https://lh3.googleusercontent.com/d/11n9cH4nH13qncJB8ZW91NOOjGXY-LBav",
+  "https://lh3.googleusercontent.com/d/1hMGzabrw2AnkrE4JA-KpvbQ6mA_Eer66"
 ];
 
 const serviceOptions = [
@@ -190,14 +190,14 @@ export default function InlocuireComponente() {
               </div>
 
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-                <p className="flex items-center gap-2 font-medium text-white">
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Rocket className="w-5 h-5 text-emerald-400" />
-                  <span className="text-emerald-400">Livrare personală</span> conform zonelor incluse.
-                </p>
-                <p className="flex items-center gap-2 font-medium text-white">
+                  <span><span className="text-emerald-400">Livrare personală</span> conform zonelor incluse.</span>
+                </Link>
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Package className="w-5 h-5 text-emerald-400" />
-                  Livrare gratuită prin curier.
-                </p>
+                  <span>Livrare gratuită prin curier.</span>
+                </Link>
               </div>
             </div>
           </div>

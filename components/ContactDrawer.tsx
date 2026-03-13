@@ -10,6 +10,7 @@ export default function ContactDrawer() {
   const [agreed, setAgreed] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
+  const [phoneWarning, setPhoneWarning] = useState(false);
 
   useEffect(() => {
     const handleOpen = () => setIsOpen(true);
@@ -165,8 +166,22 @@ export default function ContactDrawer() {
                     name="phone"
                     required
                     placeholder="număr de telefon"
-                    className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-xl text-white placeholder:text-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
+                    onInput={(e) => {
+                      const val = e.currentTarget.value;
+                      if (/[^0-9+]/.test(val)) {
+                        setPhoneWarning(true);
+                        setTimeout(() => setPhoneWarning(false), 3000);
+                      }
+                      e.currentTarget.value = val.replace(/[^0-9+]/g, '');
+                    }}
+                    className={`w-full px-4 py-3 bg-zinc-900 border ${phoneWarning ? 'border-red-500 ring-1 ring-red-500' : 'border-white/10'} rounded-xl text-white placeholder:text-gray-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all`}
                   />
+                  {phoneWarning && (
+                    <p className="text-red-400 text-xs mt-2 ml-1 flex items-center gap-1">
+                      <AlertCircle className="w-3 h-3" />
+                      Sunt permise doar cifre și semnul +
+                    </p>
+                  )}
                 </div>
 
                 <div>

@@ -9,13 +9,13 @@ import Footer from '@/components/Footer';
 import FloatingActions from '@/components/FloatingActions';
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1-86lYiLNCHDZEd6461Ow4aJzMGP7cwxS",
-  "https://drive.google.com/uc?export=view&id=1PW4RADOfcKq-uXak3sabJs62yoqNe89O",
-  "https://drive.google.com/uc?export=view&id=17VOkHmkreJPIswShF5kXOdSvQvlX1tHR",
-  "https://drive.google.com/uc?export=view&id=1ltejETAMOo1yAfBawFiwv_f9MdiBDzsE",
-  "https://drive.google.com/uc?export=view&id=1B5cDKN5Klhcg2vLviIhcn6lEdaGiqkJL",
-  "https://drive.google.com/uc?export=view&id=1hDpQ0Tf3YpV6VoujsZF0egKC666kIV9Q",
-  "https://drive.google.com/uc?export=view&id=1-ZJPH7jCtc-gqBJbHCHqKPd5K5TjLVf4"
+  "https://lh3.googleusercontent.com/d/1-86lYiLNCHDZEd6461Ow4aJzMGP7cwxS",
+  "https://lh3.googleusercontent.com/d/1PW4RADOfcKq-uXak3sabJs62yoqNe89O",
+  "https://lh3.googleusercontent.com/d/17VOkHmkreJPIswShF5kXOdSvQvlX1tHR",
+  "https://lh3.googleusercontent.com/d/1ltejETAMOo1yAfBawFiwv_f9MdiBDzsE",
+  "https://lh3.googleusercontent.com/d/1B5cDKN5Klhcg2vLviIhcn6lEdaGiqkJL",
+  "https://lh3.googleusercontent.com/d/1hDpQ0Tf3YpV6VoujsZF0egKC666kIV9Q",
+  "https://lh3.googleusercontent.com/d/1-ZJPH7jCtc-gqBJbHCHqKPd5K5TjLVf4"
 ];
 
 export default function MentenantaPC() {
@@ -141,14 +141,14 @@ export default function MentenantaPC() {
               </div>
 
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-                <p className="flex items-center gap-2 font-medium text-white">
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Rocket className="w-5 h-5 text-emerald-400" />
-                  <span className="text-emerald-400">Livrare personală</span> conform zonelor incluse.
-                </p>
-                <p className="flex items-center gap-2 font-medium text-white">
+                  <span><span className="text-emerald-400">Livrare personală</span> conform zonelor incluse.</span>
+                </Link>
+                <Link href="/livrare-ridicare" className="flex items-center gap-2 font-medium text-white hover:text-emerald-300 transition-colors">
                   <Package className="w-5 h-5 text-emerald-400" />
-                  Livrare gratuită prin curier.
-                </p>
+                  <span>Livrare gratuită prin curier.</span>
+                </Link>
               </div>
             </div>
           </div>
