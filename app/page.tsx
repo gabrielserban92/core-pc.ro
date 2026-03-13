@@ -1,12 +1,10 @@
-import dynamic from 'next/dynamic';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-
-const Services = dynamic(() => import('@/components/Services'));
-const Features = dynamic(() => import('@/components/Features'));
-const FAQ = dynamic(() => import('@/components/FAQ'));
-const Footer = dynamic(() => import('@/components/Footer'));
-const FloatingActions = dynamic(() => import('@/components/FloatingActions'));
+import Services from '@/components/Services';
+import Features from '@/components/Features';
+import FAQ from '@/components/FAQ';
+import Footer from '@/components/Footer';
+import FloatingActions from '@/components/FloatingActions';
 
 export default function Home() {
   return (

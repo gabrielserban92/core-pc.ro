@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import dynamic from 'next/dynamic';
-
-const CookieConsent = dynamic(() => import('@/components/CookieConsent'));
-const ContactDrawer = dynamic(() => import('@/components/ContactDrawer'));
+import CookieConsent from '@/components/CookieConsent';
+import ContactDrawer from '@/components/ContactDrawer';
 
 const inter = Inter({
   subsets: ['latin'],
