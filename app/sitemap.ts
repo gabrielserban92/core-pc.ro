@@ -3,6 +3,7 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://core-pc.ro';
 
+  // Define all static routes for the application
   const routes = [
     '',
     '/livrare-ridicare',
