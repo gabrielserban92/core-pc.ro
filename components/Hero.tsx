@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'motion/react';
 import Link from 'next/link';
 import { ArrowRight, Wrench, ShieldCheck, Zap } from 'lucide-react';
 import Image from 'next/image';
@@ -23,11 +22,7 @@ export default function Hero() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="max-w-3xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-emerald-400 text-sm font-medium mb-6 backdrop-blur-sm">
               <Zap className="w-4 h-4" />
               <span>Diagnosticare rapidă</span>
@@ -92,7 +87,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
