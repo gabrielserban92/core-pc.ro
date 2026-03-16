@@ -13,6 +13,30 @@ export async function POST(req: Request) {
       );
     }
 
+    // Generare număr comandă
+    const orderNumber = `CMD-${Math.floor(10000 + Math.random() * 90000)}`;
+    const fullName = `${firstName} ${lastName || ''}`.trim();
+
+    // Trimite datele către Google Sheets (în fundal)
+    try {
+      await fetch('https://script.google.com/macros/s/AKfycbzhQb0YmCzVwJcbxwaljZl0q3WzYeD3dWW9UeTHAVNQlRa9t4eYVzL0njfN12ONrzEI/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          orderNumber,
+          firstName: fullName,
+          email,
+          phone: phone || 'Nespecificat',
+          message
+        }),
+      });
+    } catch (sheetError) {
+      console.error('Eroare la salvarea in Google Sheets:', sheetError);
+      // Continuăm chiar dacă Google Sheets eșuează, pentru a trimite măcar email-ul
+    }
+
     // Verificăm dacă variabilele de mediu sunt setate
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
       console.error('Variabilele de mediu EMAIL_USER sau EMAIL_PASS lipsesc.');
@@ -36,9 +60,10 @@ export async function POST(req: Request) {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER, // Trimitem către aceeași adresă (sau poți pune o altă adresă de destinație)
       replyTo: email,
-      subject: `Mesaj nou de contact: ${firstName} ${lastName || ''} - core-pc.ro`,
+      subject: `Mesaj nou de contact [${orderNumber}]: ${fullName} - core-pc.ro`,
       text: `
-        Nume: ${firstName} ${lastName || ''}
+        Nr. Comandă: ${orderNumber}
+        Nume: ${fullName}
         Email: ${email}
         Telefon: ${phone || 'Nespecificat'}
         
@@ -71,8 +96,12 @@ export async function POST(req: Request) {
                 
                 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 32px;">
                   <tr>
+                    <td style="padding: 10px 0; color: #6b7280; font-size: 14px; width: 100px; border-bottom: 1px solid #f9fafb;"><strong>Nr. Comandă:</strong></td>
+                    <td style="padding: 10px 0; color: #10b981; font-size: 15px; font-weight: 700; border-bottom: 1px solid #f9fafb;">${orderNumber}</td>
+                  </tr>
+                  <tr>
                     <td style="padding: 10px 0; color: #6b7280; font-size: 14px; width: 100px; border-bottom: 1px solid #f9fafb;"><strong>Nume:</strong></td>
-                    <td style="padding: 10px 0; color: #111827; font-size: 15px; font-weight: 500; border-bottom: 1px solid #f9fafb;">${firstName} ${lastName || ''}</td>
+                    <td style="padding: 10px 0; color: #111827; font-size: 15px; font-weight: 500; border-bottom: 1px solid #f9fafb;">${fullName}</td>
                   </tr>
                   <tr>
                     <td style="padding: 10px 0; color: #6b7280; font-size: 14px; border-bottom: 1px solid #f9fafb;"><strong>Email:</strong></td>
@@ -113,7 +142,7 @@ export async function POST(req: Request) {
     // Trimitem email-ul
     await transporter.sendMail(mailOptions);
 
-    return NextResponse.json({ success: true, message: 'Mesajul a fost trimis cu succes!' });
+    return NextResponse.json({ success: true, message: 'Mesajul a fost trimis cu succes!', orderNumber });
   } catch (error) {
     console.error('Eroare la trimiterea email-ului:', error);
     return NextResponse.json(

@@ -82,13 +82,18 @@ export default function ContactDrawer() {
       }
 
       setStatus('success');
+      if (data.orderNumber) {
+        setErrorMessage(`Mesajul a fost trimis! Nr. comandă: ${data.orderNumber}`);
+      } else {
+        setErrorMessage('Mesajul a fost trimis cu succes!');
+      }
       form.reset();
       setAgreed(false);
       
-      // Close drawer after 3 seconds
+      // Close drawer after 5 seconds to let them read the order number
       setTimeout(() => {
         closeDrawer();
-      }, 3000);
+      }, 5000);
     } catch (error) {
       setStatus('error');
       setErrorMessage(error instanceof Error ? error.message : 'A apărut o eroare. Te rugăm să încerci din nou.');
@@ -226,7 +231,7 @@ export default function ContactDrawer() {
                 {status === 'success' && (
                   <div className="flex items-center gap-2 text-emerald-400 bg-emerald-400/10 p-3 rounded-lg text-sm">
                     <CheckCircle2 className="w-5 h-5 shrink-0" />
-                    <p>Mesajul a fost trimis cu succes!</p>
+                    <p>{errorMessage}</p>
                   </div>
                 )}
 
