@@ -37,6 +37,9 @@ export default function Hero() {
             
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Aici vei găsi soluții complete pentru dispozitivele tale: reparații hardware, instalare Windows, asamblare PC, curățare de praf și optimizare pentru laptopuri și console.
+              <span className="block mt-3 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 font-semibold">
+                Disponibil în Ilfov și împrejurimi
+              </span>
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">

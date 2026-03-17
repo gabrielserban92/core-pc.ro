@@ -130,6 +130,10 @@ export default function MentenantaLaptop() {
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span>Înlocuire thermal putty / pad-uri de pe memorii & restul de cipuri</span>
                   </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>Instalare sistem de operare: Windows 10 sau 11 (versiunile Home sau Pro)</span>
+                  </li>
                 </ul>
               </div>
 
