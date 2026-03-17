@@ -20,6 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/servicii/mentenanta-pc',
     '/servicii/optimizare-sistem-operare',
     '/servicii/update-bios',
+    '/servicii/landing-page',
+    '/servicii/site-prezentare',
+    '/servicii/magazin-online',
+    '/servicii/modificare-site'
   ];
 
   return routes.map((route) => ({
