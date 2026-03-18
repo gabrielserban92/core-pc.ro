@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import CookieConsent from '@/components/CookieConsent';
 import ContactDrawer from '@/components/ContactDrawer';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -100,6 +101,7 @@ export default function RootLayout({
         {children}
         <CookieConsent />
         <ContactDrawer />
+        <SpeedInsights />
       </body>
     </html>
   );
