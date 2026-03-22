@@ -14,11 +14,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://core-pc.ro'),
   title: {
-    default: 'Core-PC | Servicii Profesionale Mentenanță PC & Laptop',
+    default: 'Core-PC | Servicii Profesionale Mentenanță PC & Laptop in Ilfov si Bucuresti',
     template: '%s | Core-PC',
   },
-  description: 'Servicii profesionale de mentenanță IT: asamblare PC, curățare laptop, instalare Windows, optimizare și reparații console. Intervenții rapide și sigure.',
-  keywords: ['mentenanta pc', 'reparatii laptop', 'asamblare pc', 'instalare windows', 'curatare praf laptop', 'reparatii console', 'service it', 'optimizare pc'],
+  description: 'Servicii profesionale de mentenanță IT: asamblare PC, curățare laptop, instalare Windows, optimizare și reparații console. Intervenții rapide și sigure in Ilfov si Bucuresti.',
+  keywords: ['mentenanta pc', 'reparatii laptop', 'asamblare pc', 'instalare windows', 'curatare praf laptop', 'reparatii console', 'service it', 'optimizare pc', 'bucuresti', 'ilfov'],
   authors: [{ name: 'Core-PC' }],
   creator: 'Core-PC',
   publisher: 'Core-PC',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Core-PC | Servicii Profesionale Mentenanță PC & Laptop',
-    description: 'Servicii profesionale de mentenanță IT: asamblare PC, curățare laptop, instalare Windows, optimizare și reparații console.',
+    title: 'Core-PC | Servicii Profesionale Mentenanță PC & Laptop in Ilfov si Bucuresti',
+    description: 'Servicii profesionale de mentenanță IT: asamblare PC, curățare laptop, instalare Windows, optimizare și reparații console. Intervenții rapide și sigure in Ilfov si Bucuresti.',
     url: 'https://core-pc.ro',
     siteName: 'Core-PC',
     locale: 'ro_RO',
@@ -56,12 +56,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const jsonLd = {
+    const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Core-PC',
     image: 'https://core-pc.ro/logo.png', // Update with actual logo URL if available
-    description: 'Servicii profesionale de mentenanță IT: asamblare PC, curățare laptop, instalare Windows, optimizare și reparații console. Intervenții rapide și sigure.',
+    description: 'Servicii profesionale de mentenanță IT: asamblare PC, curățare laptop, instalare Windows, optimizare și reparații console. Intervenții rapide și sigure in Ilfov si Bucuresti.',
     url: 'https://core-pc.ro',
     telephone: '+40700000000', // You can update this with the real phone number
     address: {
