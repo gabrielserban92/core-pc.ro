@@ -37,7 +37,7 @@ export default function ContactDrawer() {
   const closeDrawer = () => {
     setIsOpen(false);
     if (window.location.hash === '#contact') {
-      window.history.pushState('', document.title, window.location.pathname + window.location.search);
+      window.history.pushState(null, '', window.location.pathname + window.location.search);
     }
     // Reset form state after closing
     setTimeout(() => {

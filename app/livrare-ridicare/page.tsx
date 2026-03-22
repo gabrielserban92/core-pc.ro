@@ -32,7 +32,7 @@ export default function LivrareRidicare() {
               Livrare GRATUITĂ
             </h2>
             <p className="text-gray-300 leading-relaxed text-lg mb-4">
-              Pentru comenzi și servicii care depășesc valoarea de <strong className="text-white">449,99 lei</strong>, transportul este oferit gratuit în următoarele localități:
+              Pentru comenzi și servicii care depășesc valoarea de <strong className="text-white">449,99 lei</strong>, transportul este oferit gratuit în următoarele localități din ilfov:
             </p>
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {['Izvorani', 'Ciolpani', 'Luparia', 'Piscu', 'Balta Doamnei', 'Siliștea Snagovului'].map((loc) => (
@@ -51,7 +51,7 @@ export default function LivrareRidicare() {
               Transport Personalizat
             </h2>
             <p className="text-gray-300 leading-relaxed text-lg mb-6">
-              Dacă valoarea comenzii este sub pragul de gratuitate, tarifele sunt structurate pe zone, după cum urmează:
+              Dacă valoarea comenzii este sub pragul de gratuitate, tarifele sunt structurate pe zone din judetul ilfov, după cum urmează:
             </p>
             
             <div className="overflow-x-auto">

@@ -34,52 +34,46 @@ export default function CookieConsent() {
     <AnimatePresence>
       {showConsent && (
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+          initial={{ opacity: 0, y: 50, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 20, scale: 0.95 }}
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[100] w-[calc(100%-2rem)] sm:w-full max-w-[340px] bg-zinc-900 border border-white/10 rounded-2xl p-5 shadow-2xl overflow-hidden"
         >
-          <motion.div
-            initial={{ scale: 0.9, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            className="bg-zinc-900 border border-white/10 rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl text-center relative overflow-hidden"
-          >
-            {/* Element decorativ de fundal */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-32 bg-emerald-500/10 blur-3xl rounded-full pointer-events-none" />
+          {/* Element decorativ de fundal */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-24 bg-emerald-500/10 blur-2xl rounded-full pointer-events-none" />
 
-            <div className="relative z-10">
-              <div className="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-emerald-500/30">
-                <Cookie className="w-8 h-8 text-emerald-400" />
+          <div className="relative z-10">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center border border-emerald-500/30 shrink-0">
+                <Cookie className="w-5 h-5 text-emerald-400" />
               </div>
-              
-              <h2 className="text-2xl font-bold text-white mb-4">
+              <h2 className="text-lg font-bold text-white">
                 Politica de Cookies
               </h2>
-              
-              <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                Folosim cookie-uri pentru a vă asigura cea mai bună experiență pe site-ul nostru. Pentru a continua navigarea, vă rugăm să acceptați utilizarea acestora conform{' '}
-                <Link href="/politica-de-cookies" className="text-emerald-400 hover:underline font-medium">
-                  Politicii noastre de Cookies
-                </Link>.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-3">
-                <button
-                  onClick={handleDecline}
-                  className="flex-1 px-4 py-3 rounded-xl font-medium text-gray-300 bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"
-                >
-                  Nu sunt de acord
-                </button>
-                <button
-                  onClick={handleAccept}
-                  className="flex-1 px-4 py-3 rounded-xl font-bold text-zinc-950 bg-emerald-500 hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/25"
-                >
-                  Sunt de acord
-                </button>
-              </div>
             </div>
-          </motion.div>
+            
+            <p className="text-gray-400 mb-5 text-xs leading-relaxed">
+              Folosim cookie-uri pentru a vă asigura cea mai bună experiență. Continuând, acceptați{' '}
+              <Link href="/politica-de-cookies" className="text-emerald-400 hover:underline font-medium">
+                Politica noastră
+              </Link>.
+            </p>
+            
+            <div className="flex gap-2">
+              <button
+                onClick={handleDecline}
+                className="flex-1 px-3 py-2.5 rounded-xl font-medium text-xs text-gray-300 bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"
+              >
+                Refuz
+              </button>
+              <button
+                onClick={handleAccept}
+                className="flex-1 px-3 py-2.5 rounded-xl font-bold text-xs text-zinc-950 bg-emerald-500 hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/25"
+              >
+                Accept
+              </button>
+            </div>
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

@@ -123,7 +123,8 @@ const webDesignServices = [
     price: 'Contactează-ne',
     color: 'text-emerald-400',
     bg: 'bg-emerald-400/10',
-    image: 'https://picsum.photos/seed/landing/600/400'
+    image: 'https://picsum.photos/seed/landing/600/400',
+    isContactOnly: true
   },
   {
     id: 'site-prezentare',
@@ -133,7 +134,8 @@ const webDesignServices = [
     price: 'Contactează-ne',
     color: 'text-blue-400',
     bg: 'bg-blue-400/10',
-    image: 'https://picsum.photos/seed/site/600/400'
+    image: 'https://picsum.photos/seed/site/600/400',
+    isContactOnly: true
   },
   {
     id: 'magazin-online',
@@ -143,7 +145,8 @@ const webDesignServices = [
     price: 'Contactează-ne',
     color: 'text-yellow-400',
     bg: 'bg-yellow-400/10',
-    image: 'https://picsum.photos/seed/shop/600/400'
+    image: 'https://picsum.photos/seed/shop/600/400',
+    isContactOnly: true
   },
   {
     id: 'modificare-site',
@@ -153,22 +156,14 @@ const webDesignServices = [
     price: 'Contactează-ne',
     color: 'text-rose-400',
     bg: 'bg-rose-400/10',
-    image: 'https://picsum.photos/seed/update/600/400'
+    image: 'https://picsum.photos/seed/update/600/400',
+    isContactOnly: true
   }
 ];
 
-const ServiceCard = ({ service, index }: { service: any, index: number }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, delay: index * 0.1 }}
-    className="h-full"
-  >
-    <Link 
-      href={`/servicii/${service.id}`}
-      className="bg-zinc-900 border border-white/5 rounded-2xl overflow-hidden h-full hover:border-emerald-500/30 transition-all group flex flex-col block"
-    >
+const ServiceCard = ({ service, index }: { service: any, index: number }) => {
+  const content = (
+    <>
       <div className="relative h-48 w-full overflow-hidden shrink-0">
         <Image
           src={service.image}
@@ -199,9 +194,38 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => (
           </span>
         </div>
       </div>
-    </Link>
-  </motion.div>
-);
+    </>
+  );
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="h-full"
+    >
+      {service.isContactOnly ? (
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            window.dispatchEvent(new Event('open-contact-drawer'));
+          }}
+          className="w-full text-left bg-zinc-900 border border-white/5 rounded-2xl overflow-hidden h-full hover:border-emerald-500/30 transition-all group flex flex-col block"
+        >
+          {content}
+        </button>
+      ) : (
+        <Link 
+          href={`/servicii/${service.id}`}
+          className="bg-zinc-900 border border-white/5 rounded-2xl overflow-hidden h-full hover:border-emerald-500/30 transition-all group flex flex-col block"
+        >
+          {content}
+        </Link>
+      )}
+    </motion.div>
+  );
+};
 
 export default function Services() {
   return (
